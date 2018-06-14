@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFkLastIntent</string>
+    <string name="logo">logo</string>
+    <string name="nombreUsuario">Nombre de Usuario</string>
+    <string name="contrasenaUsuario">Contraseña</string>
+    <string name="botonInicio">Inicia Sesion</string>
+    <string name="botonRegistro">Registrar</string>
+    <string name="nombreRealUsuario">Nombre y Apellidos</string>
+    <string name="correoUsuario">Correo</string>
+    <string name="Nombre_App">CINEMA-FI</string>
+    <string name="nacimientoUsuario">Nacimiento AAAA-MM-DD</string>
+</resources>
