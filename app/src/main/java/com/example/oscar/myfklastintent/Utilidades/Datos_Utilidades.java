@@ -39,7 +39,7 @@ public class Datos_Utilidades {
             + PcampoIdiomaOriginal +" varchar(255) not null, "
             + PcampoFechaEstreno +" date not null, "
             + PcampoPrecio +" real not null, "
-            + PcampoImg +" text not null)";
+            + PcampoImg +" text null)";
 
     //Tabla Series
     public static final String tablaSeries = "Series";
