@@ -29,7 +29,8 @@ public class Datos_Utilidades {
     public static final String PcampoIdiomaOriginal = "peliculas_idiomaOriginal";
     public static final String PcampoFechaEstreno = "peliculas_fechaEstreno";
     public static final String PcampoPrecio = "peliculas_precio";
-    public static final String PcampoImg= "peliculas_img";
+    public static final String PcampoPuntuacionM = "peliculas_puntuacionMedia";
+
 
     public static final String creaTablaPeliculas = "create table "+ tablaPeliculas +" ( "
             + PcampoId +" integer primary key autoincrement, "
@@ -39,7 +40,7 @@ public class Datos_Utilidades {
             + PcampoIdiomaOriginal +" varchar(255) not null, "
             + PcampoFechaEstreno +" date not null, "
             + PcampoPrecio +" real not null, "
-            + PcampoImg +" text null)";
+            + PcampoPuntuacionM +" Float(2,1) null)";
 
     //Tabla Series
     public static final String tablaSeries = "Series";
@@ -49,7 +50,6 @@ public class Datos_Utilidades {
     public static final String ScampoSinopsis = "series_sinopsis";
     public static final String ScampoIdiomaOriginal = "series_idiomaOriginal";
     public static final String ScampoFechaInicio = "series_fechaEstreno";
-    public static final String ScampoImg = "series_img";
     public static final String ScampoPuntuacionM = "series_puntuacionMedia";
 
     public static final String creaTablaSeries = "create table "+ tablaSeries +" ( "
@@ -59,8 +59,7 @@ public class Datos_Utilidades {
             + ScampoSinopsis +" varchar(255) not null, "
             + ScampoIdiomaOriginal +" varchar(255) not null, "
             + ScampoFechaInicio +" date not null, "
-            + ScampoPuntuacionM +" float(2,1) not null, "
-            + ScampoImg +" text)";
+            + ScampoPuntuacionM +" float(2,1) null)";
 
     //Tabla Temporadas
     public static final String tablaTempoaradas = "Temporadas";
@@ -173,9 +172,9 @@ public class Datos_Utilidades {
     //Llenar tablaUsuarios
     public static final String LlU = ""+tablaUsuarios+"("+UcampoId+", "+UcampoNombre+", "+UcampoCorreo+", "+UcampoFechaN+", "+UcampoContra+", "+UcampoSaldo+")";
     //Llenar tablaPeliculas
-    public static final String LlP = ""+tablaPeliculas+"("+PcampoId+", "+PcampoTitulo+", "+PcampoGenero+", "+PcampoSinopsis+", "+PcampoIdiomaOriginal+", "+PcampoFechaEstreno+", "+PcampoPrecio+","+PcampoImg+")";
+    public static final String LlP = ""+tablaPeliculas+"("+PcampoId+", "+PcampoTitulo+", "+PcampoGenero+", "+PcampoSinopsis+", "+PcampoIdiomaOriginal+", "+PcampoFechaEstreno+", "+PcampoPrecio+")";
     //Lenar series
-    public static final String LlS = ""+tablaSeries+"("+ScampoId+", "+ScampoTitulo+", "+ScampoGenero+", "+ScampoSinopsis+", "+ScampoIdiomaOriginal+", "+ScampoFechaInicio+", "+ScampoPuntuacionM+", "+ScampoImg+")";
+    public static final String LlS = ""+tablaSeries+"("+ScampoId+", "+ScampoTitulo+", "+ScampoGenero+", "+ScampoSinopsis+", "+ScampoIdiomaOriginal+", "+ScampoFechaInicio+", "+ScampoPuntuacionM+")";
     //Llenar temporadas
     public static final String LlT = ""+tablaTempoaradas+"("+TcampoId+", "+TcampoTitulo+", "+TcampoFechaEstreno+", "+TcampoFechaProduccion+", "+TcampoImg+", "+TcampoSeriesID+")";
     //Llenar capitulos
